@@ -1,0 +1,164 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2196f3;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    color: #2196f3;
+    margin-top: 0;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.book h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.book p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.book .price {
+    font-weight: bold;
+    color: #e64a19;
+}
+
+.book a.button {
+    display: inline-block;
+    background-color: #2196f3;
+    color: white;
+    padding: 8px 12px;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.book a.button:hover {
+    background-color: #1976d2;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #2196f3;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1976d2;
+}
+
+.alert {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success {
+    color: #388e3c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+li .date {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .book {
+        flex: 1 1 100%;
+    }
+}
